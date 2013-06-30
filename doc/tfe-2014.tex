@@ -1,0 +1,44 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{tfe-style}
+
+
+%meta-donnée
+\author{Thomas Stassin}
+\date{}
+
+\begin{document}
+
+% première page de titre
+\input{title-page.tex}
+
+% insertion d'une page blanche
+\newpage
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+\null
+\newpage
+
+% deuxième page de titre
+\input{title-page.tex}
+
+\tableofcontents
+\pagebreak
+
+\chapter{Introduction}
+
+Le développement d'une application de gestion de fichiers audios, permettant leur lecture et leur classification à l'aide de tags.
+
+Cette application servira à mon client, pour créer des listes de lectures rapidement, afin de pouvoir diffuser des musiques adéquates lors d'événements qui requièrent plusieurs styles d'ambiances audios.
+
+Cette application sera développée pour pouvoir \^{e}tre deployée sur plusieurs plateforme (Linux, Mac-OS, Windows) et pourra se connecter à un server pour pouvoir partager et récupérer les tags lier au fichiers audio.
+
+\chapter{Contexte}
+
+\section{Le client}
+
+\section{La demande initiale}
+
+\section{Les produits existants}
+
+\end{document}
