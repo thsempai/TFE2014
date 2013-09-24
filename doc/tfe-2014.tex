@@ -95,9 +95,9 @@ Nous avons, le client et moi, établis que chaque partie de l'application serait
 \item Le partage des tags via d'un serveur.
 \end{enumerate}
 
-Ces trois points là seront abordé lors de rendez-vous distincts et dans l'ordre présenté ci-dessus.
+% Ces trois points là seront abordé lors de rendez-vous distincts et dans l'ordre présenté ci-dessus.
 
-Pour chaques parties, différents composants seront identifiés, ainsi que les besoins qu'il devront couvrir. 
+% Pour chaques parties, différents composants seront identifiés, ainsi que les besoins qu'il devront couvrir. 
 
 % De plus, nous avons abordé notre mode de fonctionnement de travail lors du developpement de l'application:
 
@@ -109,10 +109,36 @@ Pour chaques parties, différents composants seront identifiés, ainsi que les b
 
 \section{Elaboration}
 
+Lors des premiers rendez-vous, nous avons aborder une partie du programme par rendez-vous
 
-Lors du premier rendez-vous, nous avons donc abordé l'éditeur de tags.
+\subsubsection{Editeur de tags}
+
+Le client désire pouvoir encoder les tags de ses musiques à partir de l'application. Il a bien préciser que le but de cette éditeur n'était pas de remplacer Ex Falso \footnote{module de Quolibet permettant d'éditer les tags d'un fichier audio.}
+
+L'editeurs devra pouvoir réaliser les opérations suivantes.
+\begin{itemize}
+\item Pour une musique selectionnée
+	\begin{itemize}
+	\item changer le contenu des tags
+	\end{itemize}
+\end{itemize}
 
 \section{Lots d'information identifiés}
+
+\subsubsection{Editeurs de tags}
+
+Le client m'a fournit une liste des tags qu'il voudrait que l'application propose par défaut sans devoir faire d'effort supplémentaire que son choix.
+Ces tags sont les suivants:
+
+\begin{itemize}
+\item Ariste
+\item Titre
+\item Album
+\item Piste
+\item \No du CD
+\item Nombre de CD totaux
+\item Date de sortie
+\end{itemize}
 
 \subsection{Lots d'information existants à conserver}
 
