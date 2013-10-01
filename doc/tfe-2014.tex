@@ -109,19 +109,23 @@ Nous avons, le client et moi, établis que chaque partie de l'application serait
 
 \section{Elaboration}
 
-Lors des premiers rendez-vous, nous avons aborder une partie du programme par rendez-vous
+Lors des premiers rendez-vous, nous avons aborder chaque partie du programme.
 
 \subsubsection{Editeur de tags}
 
 Le client désire pouvoir encoder les tags de ses musiques à partir de l'application. Il a bien préciser que le but de cette éditeur n'était pas de remplacer Ex Falso \footnote{module de Quolibet permettant d'éditer les tags d'un fichier audio.}
 
-L'editeurs devra pouvoir réaliser les opérations suivantes.
+Nous avons établi 3 cas d'utilisations: 
 \begin{itemize}
-\item Pour une musique selectionnée
-	\begin{itemize}
-	\item changer le contenu des tags
-	\end{itemize}
+	\item Editer un tag dans un fichier audio.
+	\item Supprimer un tag dans un fichier audio.
+	\item Ajouter un tag dans un fichier audio.
 \end{itemize}
+
+\begin{figure}[!ht]
+	 \caption{\label{use case 1} Diagramme des cas d'utilisations de l'éditeur de tags}
+   \includegraphics[scale=0.5]{uml/UseCaseTagEditor.png}
+\end{figure}
 
 \section{Lots d'information identifiés}
 
@@ -131,13 +135,27 @@ Le client m'a fournit une liste des tags qu'il voudrait que l'application propos
 Ces tags sont les suivants:
 
 \begin{itemize}
-\item Ariste
-\item Titre
-\item Album
-\item Piste
-\item \No du CD
-\item Nombre de CD totaux
-\item Date de sortie
+	\item title
+	\item artist
+	\item album
+	\item artistsort
+	\item date
+	\item discnumber
+	\item discsubtitle
+	\item disctype
+	\item genre
+	\item labelid
+	\item replaygain
+	\item replaygain\_album\_gain
+	\item replaygain\_album\_peak
+	\item replaygain\_track\_gain
+	\item replaygain\_track\_peak
+	\item romanized\_artist
+	\item romanized\_album
+	\item romanized\_title
+	\item tracknumber
+	\item translated\_title
+	\item translated\_album
 \end{itemize}
 
 \subsection{Lots d'information existants à conserver}
